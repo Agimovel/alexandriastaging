@@ -4,8 +4,8 @@
     %title Alexandria Staging - Affordable Home Staging Consultations in Northern Virginia
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"}
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"}
-    <link rel="stylesheet" href="supersized.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="js/tipsy-0.1.7/src/stylesheets/tipsy.css"/>
+    %link{:rel=>"stylesheet", :type=>"text/css", :media=>"screen", :href=>"supersized.css"}
+    %link{:rel=>"stylesheet", :type=>"text/css", :media=>"screen", :href=>"js/tipsy-0.1.7/src/stylesheets/tipsy.css"}
     :css 
       #content{ background-color: rgb(0,0,0); 
       opacity: .65;
@@ -45,25 +45,27 @@
     #content-wrapper
       #content
         %div{:align => "center"}
-          <table width="88%" border="0">
-          <tr>
-          <td><h3><img src="images/as-logo.png"/></a></h3></td>
-          <td align="left" valign="bottom">
-          <p>Cost effective home staging and redesign in Northern Virginia.</p>
-          </td>
-          </tr>
-          </table>
+          
+          %table{ :width => "88%", :border => "0"}
+            %tr          
+              %td 
+                %img{ :src => "images/as-logo.png"}
+              %td{ :align => "left", :valign => "bottom"}
+                %p Cost effective home staging and redesign in Northern Virginia.
+          
           %p &nbsp;
           %p &nbsp;
           %p{ :align => "center"}
             For more information and contact details, please visit us at<br/> <a href="https://www.facebook.com/pages/Alexandria-Staging/145506122179942?sk=wall">Facebook</a>
-            <a href="https://www.facebook.com/pages/Alexandria-Staging/145506122179942?sk=wall"><img align="absmiddle" src="images/facebook-icon.png" height="40" /></a> 
+            %a{ :href => "https://www.facebook.com/pages/Alexandria-Staging/145506122179942?sk=wall"}
+              %img{ :align => "absmiddle", :src => "images/facebook-icon.png", :height => "40"} 
           
           %p{:align => "right" , :style => "position:absolute;bottom:0;right:0"}
-            %a{:href => "http://www.ashsr.com/"} <img class="tipsy" title="Member: American Society of Home Stagers"class="tipsy" src="images/ashsr-logo.png" height="47" align="absmiddle" />
-            %a{:href => "http://www.realestatestagingassociation.com/"} <img class="tipsy" title="Member: Real Estate Staging Association" src="images/resa-trans-200x83.png" height="57" align="absmiddle">
-            %a{:href => "http://www.homestagingresource.com/"} <img class="tipsy" title="Certified Professional Home Stager and Redesigner" src="images/hsr_cert.png" height="57" align="absmiddle">
+            %a{:href => "http://www.ashsr.com/"} 
+              %img{ :class => "tipsy", :title => "Member: American Society of Home Stagers", :src => "images/ashsr-logo.png", :height => "47", :align => "absmiddle"}
+            %a{:href => "http://www.realestatestagingassociation.com/"} 
+              %img{ :class => "tipsy", :title => "Member: Real Estate Staging Association", :src => "images/resa-trans-200x83.png", :height => "57", :align => "absmiddle"}
+            %a{:href => "http://www.homestagingresource.com/"}
+              %img{ :class => "tipsy", :title => "Certified Professional Home Stager and Redesigner", :src => "images/hsr_cert.png", :height => "57", :align => "absmiddle"}
 	  
     #supersized
- 
-
