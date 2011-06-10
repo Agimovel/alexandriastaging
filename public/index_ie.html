@@ -1,0 +1,96 @@
+<!--
+core.html
+Supersized - Fullscreen Slideshow jQuery Plugin Version 3.0
+By Sam Dunn (www.buildinternet.com // www.onemightyroar.com)
+Website: www.buildinternet.com/project/supersized
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+	<title>Alexandria Staging</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+	
+	<link rel="stylesheet" href="supersized.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="lib/tipsy-0.1.7/src/stylesheets/tipsy.css" />
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="supersized.3.0.core.js"></script>
+	<script type="text/javascript">  
+		$(function(){
+			$.fn.supersized.options = {  
+				startwidth: 1600,  
+				startheight: 967,
+				vertical_center: 1,
+				slides : [
+					{image : 'images/mh_lr_4.jpg' }
+				]
+			};
+			
+	        $('#supersized').supersized(); 
+			
+	    });
+	</script>
+	
+	<style type="text/css">
+
+	div #content{ 
+     background-color: rgb(0,0,0); 
+     opacity: .65;
+     filter: alpha(opacity = 65);
+          
+     width:720px; height:800px; margin:30px auto; text-align:left; }
+
+
+			
+		/*Demo Styles*/
+		h3{ padding:30px 30px 20px 30px; }
+		p{ padding:0 30px 30px 30px; color:#fff; font:13pt "Helvetica Neue", "Helvetica", Arial, sans-serif; text-shadow: #000 0px 2px 0px; line-height:160%; }
+
+
+		.plugin-logo{ float:right; }
+		
+	</style>
+</head>
+
+<body>
+
+<!--Loading display while images load-->
+<div id="loading">&nbsp;</div>
+
+<!--Content Area-->
+<div id="content-wrapper">
+	<div id="content">
+		<p></p>
+		<div align="center">
+		<table width="88%" border="0">
+			<tr>
+				<td>
+				  <h3><img src="images/as-logo.png"/></a> 
+				</td>
+				<td align="left" valign="bottom">
+					<p>Home staging and redesign in Northern Virginia.</p>
+				</td>
+			</tr>
+		</table>
+		</div>
+  		
+
+		</h3>
+		<p>&nbsp;</p>
+		
+		<p align="center">
+			Contact me through <a href="https://www.facebook.com/pages/Alexandria-Staging/145506122179942?sk=wall">Facebook</a>
+			<a href="https://www.facebook.com/pages/Alexandria-Staging/145506122179942?sk=wall"><img align="absmiddle" src="images/facebook-icon.png" height="40" /></a>
+			
+		</p>
+		
+	</div>
+</div>
+
+<!--Slides-->
+<div id="supersized"></div>
+
+</body>
+</html>

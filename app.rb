@@ -1,6 +1,18 @@
 require 'rubygems'
 require 'sinatra'
+require 'haml'
+
+set :haml, :format => :html5
+
+get '/foo/:id' do 
+  'you wrote ' + params[:id]
+end
+
+get '/new' do
+	haml :new
+end
 
 get '/' do
-  '<h2 align="center">Hello, from Alexandria Staging.</h2>'
+	haml :index
+
 end
